@@ -39,6 +39,12 @@ var writeBerries = function (berries) {
   document.write('<h1>Berries</h1>');
   document.write('<ol>');
 
+  berries.forEach(function (berry) {
+   document.write('<h2>' + berry.name + '</h2>');
+   document.write('<dl>');
+   document.write('<dt>Grows On A Shrub?</dt>');
+   document.write('<dt>Energy</dt>');
+
 // ##########################################################
 // START DO NOT CHANGE ZONE
 // ##########################################################
