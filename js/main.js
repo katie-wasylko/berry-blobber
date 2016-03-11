@@ -40,18 +40,30 @@ var writeBerries = function (berries) {
   document.write('<ol>');
 
   berries.forEach(function (berry) {
-   document.write('<h2>' + berry.name + '</h2>');
-   document.write('<dl>');
-   document.write('<dt>Grows On A Shrub?</dt>');
-   document.write('<dt>Energy</dt>');
-   document.write('<dd>' + berry.energy + '</dd>');
-   document.write('<dt>Carbohydrates</dt>');
-   document.write('<dd>' + berry.carbs + '</dd>');
-   document.write('<dt>Protein</dt>');
-   document.write('<dd>' + berry.protein + '</dd>');
+    document.write('<h2>' + berry.name + '</h2>');
+    document.write('<dl>');
+    document.write('<dt>Grows On A Shrub?</dt>');
+    document.write('<dt>Energy</dt>');
+    document.write('<dd>' + berry.energy + '</dd>');
+    document.write('<dt>Carbohydrates</dt>');
+    document.write('<dd>' + berry.carbs + '</dd>');
+    document.write('<dt>Protein</dt>');
+    document.write('<dd>' + berry.protein + '</dd>');
 
-   document.write('<dd>');
+    document.write('<dd>');
 
+    if (berry.onShrub) {
+      document.write('Yes');
+    } else {
+      document.write('No');
+    }
+
+    document.write('<dd>');
+
+    document.write('<dl>');
+
+  });
+};
 
 // ##########################################################
 // START DO NOT CHANGE ZONE
