@@ -44,6 +44,14 @@ var writeBerries = function (berries) {
    document.write('<dl>');
    document.write('<dt>Grows On A Shrub?</dt>');
    document.write('<dt>Energy</dt>');
+   document.write('<dd>' + berry.energy + '</dd>');
+   document.write('<dt>Carbohydrates</dt>');
+   document.write('<dd>' + berry.carbs + '</dd>');
+   document.write('<dt>Protein</dt>');
+   document.write('<dd>' + berry.protein + '</dd>');
+
+   document.write('<dd>');
+
 
 // ##########################################################
 // START DO NOT CHANGE ZONE
